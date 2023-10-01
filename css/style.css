@@ -1,0 +1,68 @@
+:root {
+    --border-radius: 20px;
+    --background-objects: rgba(0, 0, 0, 0.38);
+    --color: white;
+    --font-size: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #6E48AA, #9D50BB);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p, b, span, footer {
+    font-family: monospace;
+}
+
+.hidden {
+    display: none;
+}
+
+#progress-bar {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#progress-bar div {
+    height: 10px;
+    background-color: green;
+}
+
+#stats p {
+    background-color: var(--background-objects);
+    color: var(--color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+button {
+    padding: 50px;
+    border: unset;
+    border-radius: var(--border-radius);
+    background: var(--background-objects);
+    color: var(--color);
+    font-size: var(--font-size);
+    cursor: pointer;
+}
+
+.timeComplete {
+    animation: barComplete var(--time) forwards linear;
+}
+
+@keyframes barComplete {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
