@@ -44,6 +44,13 @@ p, b, span, footer {
     border-radius: var(--border-radius);
 }
 
+.made {
+    background-color: var(--background-objects);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    color: var(--color);
+}
+
 button {
     padding: 50px;
     border: unset;

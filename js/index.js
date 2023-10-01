@@ -5,7 +5,8 @@ const divHidden = document.querySelector('#stats')
 const correctWords = document.querySelector('#correct span');
 const errorWords = document.querySelector('#errors span');
 const velWPM = document.querySelector('#wpm span');
-const restartBtn = document.querySelector('#restart')
+const restartBtn = document.querySelector('#restart');
+const sponsor = document.querySelector('.made');
 
 //Var
 const playTime = 3;
@@ -16,11 +17,11 @@ function start(){
     progressBar.classList.toggle('timeComplete', true);
     startBtn.classList.toggle('hidden', true);
     divHidden.classList.toggle('hidden', true);
+    sponsor.classList.toggle('hidden', true);
 }
 
 function newWord(){
     const Wordnum = Math.floor(Math.random()*length);
-    const chosenWord
     console.log(Wordnum);
 }
 
